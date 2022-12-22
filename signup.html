@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>기본 서비스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/fabicon.png" />
+    <!--Bootstrap CSS-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--폰트 CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        a{
+            text-decoration:none;
+        }
+
+        .container button {
+            background-color: white;
+            border: 1px solid #000000;
+            font-size: 14px;
+            font-weight: 900;
+            margin-bottom: 5px;
+           width:100px;
+            height: 39px;
+        }
+
+        .panel-heading {
+            background-color: #373c42;
+            color: white;
+            font-size: 14px;
+        }
+
+        #footer {
+            margin: 0 auto !important;
+            width: 100% !important;
+            position: absolute;
+            background-color: #373c42;
+            color: white;
+            font-size: 12px;
+        }
+
+
+            #footer p {
+                margin-left: 19px;
+                text-align: left;
+            }
+
+        #sns i {
+            text-align: right;
+            padding: 10px;
+        }
+        button:hover, button.hover{
+            background-color:black;
+            color:white;
+        }
+        table{
+            font-size:12px;
+        }
+        #content {
+            letter-spacing: -1px;
+        }
+
+        .panel-heading a {
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        
+        <!-- Brand/logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/deal_logo.png" alt="logo">
+            </a>
+        </div>
+ 
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!-- Links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="nav-link" href="app.html" style="color:white;">기본서비스</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="pay_m.html">결제관리</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="account.html">정산 및 프로모션</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="faq1.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="padding-bottom:100px; min-height:100%; position:relative;">
+        <div class="container" style=" text-align:center;">
+            <img src="img/logo.png" />
+            <h1>회원가입</h1>
+        </div>
+        
+        <div class="container" style="margin-bottom:10px; text-align:center;">
+            <button type="button" onclick="location.href='app.html'">앱 설치</button>
+            <button type="button" onclick="location.href='signup.html'" class="hover">회원가입</button>
+            <button type="button" onclick="location.href='function_m.html'">주요기능</button>
+            <button type="button" onclick="location.href='function_v.html'">부가기능</button>
+            <button type="button" onclick="location.href='info.html'">정보관리</button>
+            <button type="button" onclick="location.href='app.html'">기타</button>
+        </div>
+
+        <div  id="content" class="container" style="height:100%;">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">약관동의 및 계정등록</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>(1) 앱 실행 후 [등록하기] 버튼 클릭</p>
+                            <img class="img-responsive" src="img/signup_2_1_a.png" />
+                            <p>(2) 약관동의 *(개인정보 취급동의 / 딜앱 이용약관)</p>
+                            <img class="img-responsive" src="img/signup_2_1_b.png" />
+                            <p>(3) 아이디(이메일) 및 비밀번호 등록</p>
+                            <img class="img-responsive" src="img/signup_2_1_c.png" />
+                            <img class="img-responsive" src="img/signup_2_1_d.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">휴대폰인증 및 상점정보 등록</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>(1) 휴대폰 인증 (본인 인증)</p>
+                            <img class="img-responsive" src="img/signup_2_2_a.png" />
+                            <img class="img-responsive" src="img/signup_2_2_b.png" />
+                            <p>(2) 상점정보 등록 (상점명(필수), 판매자명(필수), 프로필사진 등록, 카테고리 선택)</p>
+                            <img class="img-responsive" src="img/signup_2_2_c.png" />
+                            <img class="img-responsive" src="img/signup_2_2_d.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">신분증/사업자 인증</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>해당 박스 클릭 (사진촬영 혹은 갤러리에서 사진선택*)</p>
+                            <img class="img-responsive" src="img/signup_2_3_a.png" />
+                            <p>검토 중 일때(평균 00분 소요)</p>
+                            <img class="img-responsive" src="img/signup_2_3_b.png" />
+                            <p>인증완료 시 화면</p>
+                            <img class="img-responsive" src="img/signup_2_3_c.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">정산 계좌 등록</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img class="img-responsive" src="img/signup_2_4_a.png" />
+                            <img class="img-responsive" src="img/signup_2_4_b.png" />
+                            <p>(TIP) 정산계좌가 등록되어야 대금 출금요청이 가능하십니다.</p>
+                            <p>
+                                가입 시 미리 출금계좌 설정을 해두시면, (정산가능금액으로
+                                전환된) 대금 출금요청 시 보다 빠르게 정산받으실 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">가입조건 안내</a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>거래필수 절차</th>
+                                        <th>이용 시점</th>
+                                        <th>가입등록비/개발비 등</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>일반개인 판매자</td>
+                                        <td><p style="color:red;">각종 심사서류없음</p><p style="color:red;">신분증 인증</p><p>정산계좌 등록</p></td>
+                                        <td>각 인증 완료 즉시 사용가능</td>
+                                        <td>전액 무료</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>사업자 (법인/개인)</td>
+                                        <td><p style="color:red;">각종 심사서류없음</p><p style="color:red;">신분증/사업자 모두인증</p><p>정산계좌 등록</p></td>
+                                        <td>각 인증 완료 즉시 사용가능</td>
+                                        <td>전액 무료</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+
+                                        <th>수수료(부가세 별도)</th>
+                                        <th>1일 거래 한도</th>
+                                        <th>연간 거래 한도</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td>일반정산 *(기본수수료)<p style="color:red;">4.5%</p></td>
+                                        <td><p style="color:red;">3,000,000</p></td>
+                                        <td><p style="color:red;">50,000,000</p></td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>1일 (익일) 정산 *<p style="color:red;">기본 수수료 + 5%</p></td>
+                                        <td><p style="color:red;">5,000,000</p></td>
+                                        <td><p style="color:red;">50,000,000</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>*일반정산(기본수수료)는 카드사수수료 3.5%+딜앱서비스수수료 1.0%를 합한 수수료입니다. (부가세 별도)</p>
+                            <p>*제휴 및 협약 등의 계약을 이행하실 경우, 협의를 통해 거래량, 거래규모 등 계약 내용에 따른 수수료 및 거래한도 등의 조정이 가능합니다.</p>
+                            <p>*업계최저 수수료 2.5%로 이용하실 수 있는 특별 딜멤버쉽이 출시되었습니다. 자세한 사항은 딜앱매뉴얼3 – 정산 및 프로모션에서 확인하시기 바랍니다.</p>
+                            <p>(연간 거래한도 최대 1억원 / 일일한도증액 등 다양한 혜택 제공)</p><br />
+                            <p>*가입 시 유의사항 (필독!) 관련 상세내용은 이용약관을 참고하시기 바랍니다.</p>
+                            <p>[앱 설치]</p>
+                            <p>다운로드 가능 연령 : 연령무관 (갤럭시 앱스의 경우 12세 이상 가입 가능)</p>
+                            <p>카드결제를 받는 실질적 서비스 이용의 시점에서는 만 14세 이상에 한해 사용 가능. (신분증 인증 시 검토됨)</p>
+                            <p>[일반개인판매자]</p>
+                            <p>내국인의 경우 : 신분증 인증 시 주민등록증, 여권, 운전면허증만 인정됨.</p>
+                            <p>외국인의 경우 : 국내(한국)에서 발급해주는 외국인등록증으로 신분증 등록 필요. (국내(한국) 계좌를 보유한 외국인에 한하여 가입 및 실질적 이용(거래) 가능.)</p>
+                            <p>[사업자판매자]</p>
+                            <p>
+                                법인사업자의 경우 :
+                                신분증 인증은 대표자 신분증으로만 인증 가능
+                                (신분증 인증 조건은 일반개인판매자와 동일. 단,공동대표일 경우 등록한 신분증 외의 다른 신분증  safe@fireseed.co.kr 로 제출필수)
+                                사업자 등록증 상의 법인명(단체명)의 계좌로만 정산계좌 등록이 가능(대표자 개인통장 불가능)
+                            </p>
+                            <p>
+                                기본사업자(면세자, 간이과세자, 일반사업자 등)의 경우 :
+                                1. 단일대표자일 경우 : 사업자 등록증 상의 대표자 신분증 인증
+                                신분증 인증상의 명의와 동일한 개인통장 가능(대표자 개인통장 가능), 상호명이 포함된 사업비 통장도 가능
+                                2. 공동명의일 경우 : 사업자 등록증 상의 공동명의 중 누구라도 신분증 인증 가능
+                                단, 상호명이 포함된 사업비 통장(사업자 계좌)만 가능
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div id="footer" class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/group-20.png" style="margin-bottom:10px; margin-top:10px; margin-left:17px;" />
+            </div>
+            <div class="col-sm-6" id="sns" style="position:initial; text-align:right; margin-top:0; padding:10px;">
+                <a href="https://www.facebook.com/dealfireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 54.png" /></a>
+                <a href="https://www.instagram.com/deal_fireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/a.png" /></a>
+                <a href="https://blog.naver.com/fireseed77" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 53.png" /></a>
+            </div>
+        </div>
+        <p>서울특별시 서초구 강남대로 311 드림플러스</p>
+        <p style="color:white;">주식회사 파이어씨드 | 사업자등록번호 468-87-00736</p>
+        <p>대표 이문영</p>
+
+    </div>
+        
+    
+</body>
+</html>

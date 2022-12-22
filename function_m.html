@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>기본 서비스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/fabicon.png" />
+    <!--Bootstrap CSS-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--폰트 CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        a{
+            text-decoration:none;
+        }
+
+        .container button {
+            background-color: white;
+            border: 1px solid #000000;
+            font-size: 14px;
+            font-weight: 900;
+            margin-bottom: 5px;
+           width:100px;
+            height: 39px;
+        }
+
+        .panel-heading {
+            background-color: #373c42;
+            color: white;
+            font-size: 14px;
+        }
+
+        #footer {
+            margin: 0 auto !important;
+            width: 100% !important;
+            position: absolute;
+            background-color: #373c42;
+            color: white;
+            font-size: 12px;
+        }
+
+
+            #footer p {
+                margin-left: 19px;
+                text-align: left;
+            }
+
+        #sns i {
+            text-align: right;
+            padding: 10px;
+        }
+        button:hover, button.hover{
+            background-color:black;
+            color:white;
+        }
+        table{
+            font-size:12px;
+        }
+        #content {
+            letter-spacing: -1px;
+        }
+
+        .panel-heading a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        
+        <!-- Brand/logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/deal_logo.png" alt="logo">
+            </a>
+        </div>
+ 
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!-- Links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="nav-link" href="app.html" style="color:white;">기본서비스</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="pay_m.html">결제관리</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="account.html">정산 및 프로모션</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="faq1.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="padding-bottom:100px; min-height:100%; position:relative;">
+        <div class="container" style=" text-align:center;">
+            <img src="img/logo.png" />
+            <h1>주요기능</h1>
+        </div>
+        
+        <div class="container" style="margin-bottom:10px; text-align:center;">
+            <button type="button" onclick="location.href='app.html'">앱 설치</button>
+            <button type="button" onclick="location.href='signup.html'">회원가입</button>
+            <button type="button" onclick="location.href='function_m.html'" class="hover">주요기능</button>
+            <button type="button" onclick="location.href='function_v.html'">부가기능</button>
+            <button type="button" onclick="location.href='info.html'">정보관리</button>
+            <button type="button" onclick="location.href='app.html'">기타</button>
+        </div>
+
+        <div  id="content" class="container" style="height:100%;">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">바로결제 QR코드 / 링크</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>(1) 바로결제 QR코드 or 링크 클릭</p>
+                            <img class="img-responsive" src="img/function_3_1_a.png" />
+                            <p>(2) 바로결제 QR코드 or 링크 보관/공유</p>
+                            <img class="img-responsive" src="img/function_3_1_b.png" />
+                            <p>
+                                (3) 구매자(결제하실 고객)에게 전달
+                                *QR코드 이미지 프린트,
+                                링크 카톡 공유 등 상황에 맞게 활용
+                            </p>
+                            <img class="img-responsive" src="img/function_3_1_c.png" />
+                            <p>
+                                (4)구매자(결제하실 고객)가
+                                결제페이지 접속 후
+                                금액/결제자정보/카드정보
+                                입력만 하면 결제 완료
+                                *상점정보 확인 필수!
+                            </p>
+                            <img class="img-responsive" src="img/function_3_1_d.png" />                     
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">요청 - 일회용주문서</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h4>[판매자 매뉴얼]</h4>
+                            <img class="img-responsive" src="img/function_3_2_a.png" />
+                            <p>(1) 금액 / 거래명 입력</p>
+                            <p>(2) 거래방식 선택 (바로결제 or 배송거래)</p>
+                            <p>(3) 1일정산 여부 선택</p>
+                            <p>(4) 일회용 QR코드/링크 발행 후 구매자(결제하실 고객)에게 전달</p>
+                            <img class="img-responsive" src="img/function_3_1_c.png" />
+                            <p>(TIP) 직거래 시 QR코드 이미지 제시, 배송거래 시 링크 카톡 전송</p>
+                            <h4>[구매자 매뉴얼]</h4>
+                            <p>
+                                구매자(결제하실 고객)가
+                                결제페이지 접속 후
+                                금액/결제자정보/카드정보
+                                입력만 하면 결제 완료 </p>
+                            <img class="img-responsive" src="img/function_3_1_d.png" />
+                            <p style="color:red;">* 상점정보 확인 필수!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">요청 - 마켓주문서</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <h4>[판매자 매뉴얼]</h4>
+                            <img class="img-responsive" src="img/function_3_3_a.png" />
+                            <img class="img-responsive" src="img/function_3_3_b.png" />
+                            <p>(1) 우측하단의 상품 등록버튼(+) 클릭</p>
+                            <p>(2) 상품 등록 상품명/금액/재고 입력</p>
+                            <p>(3) 거래방식 및 1일정산 여부 선택</p>
+                            <p>(4) 우측상단 [등록] 버튼 클릭 시 상품 등록 완료</p>
+                            <img class="img-responsive" src="img/function_3_3_c.png" />                           
+                            <p>(5) 목록에서 해당상품 클릭 후 QR코드 or 링크를 구매자에게 전달</p>
+
+                            <h5>(상품 수정/변경)</h5>
+                            <img class="img-responsive" src="img/function_3_3_d.png" />
+                            <p>(1) 목록에서 해당상품 클릭 후 우측상단 [수정] 클릭</p>
+                            <img class="img-responsive" src="img/function_3_3_e.png" />
+                            <p>
+                                (2) 상품내용(재고/금액 등) 변경,
+                                옵션 삭제, 상품주문서 삭제,
+                                바로결제<->배송거래 변경 등 가능
+                            </p>
+                            <img class="img-responsive" src="img/function_3_3_f.png" />
+                            <h4>[구매자 매뉴얼]</h4>
+                            <p>결제 페이지 화면</p>
+
+                            <p>
+                                *배송거래 시 배송비 확인
+                                및 주소/전화번호 입력 필수
+                            </p>
+                            <img class="img-responsive" src="img/function_3_3_g.png" />
+                            <p>(1) 옵션 내 구매상품 선택</p>
+                            <img class="img-responsive" src="img/function_3_3_h.png" />
+                            <img class="img-responsive" src="img/function_3_3_i.png" />
+                            <p>(2) 결제자정보/카드정보 입력만 하면 결제 완료</p>
+                            <img class="img-responsive" src="img/function_3_3_j.png" />
+                            <p>영수증 페이지 화면</p>
+                            <img class="img-responsive" src="img/function_3_3_k.png" />
+                            <img class="img-responsive" src="img/function_3_3_l.png" />
+                            <img class="img-responsive" src="img/function_3_3_m.png" />
+                            <img class="img-responsive" src="img/function_3_3_n.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">직접결제</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">                          
+                            <p>링크, QR코드 전달할 시간도 없이 바쁜 현장에서는, 판매자가 구매자의 카드번호를 직접 입력하여 결제 받으세요.</p>
+                            <p>기기가 없어도 카드 '긁어서 결제'하는 것처럼 신속하고 간편합니다.</p>
+                            <img class="img-responsive" src="img/function_3_4_a.png" />
+                            <p>(1) 금액입력</p>
+                            <p>(TIP) 자주쓰는 금액 저장</p>
+                            <p>(2) 구매자 카드의 카드번호/유효기간 입력</p>
+                            <p>(3) 결제버튼 클릭하면 끝</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">정기결제</a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img class="img-responsive" src="img/function_3_5_a.png" />
+                            <p>(1) 정기결제 생성버튼 클릭</p>
+                            <img class="img-responsive" src="img/function_3_5_b.png" />
+                            <p>(2) 증빙서류 등록 (평균 00분 소요)</p>
+                            <img class="img-responsive" src="img/function_3_5_c.png" />
+                            <p>(3) 정기결제 계약내용 입력</p>
+                            <p>(계약자명, 계약명, 거래금액, 계약기간, 결제일)</p>
+                            <p>(4) 정기결제자에게 결제요청 링크 전송</p>
+                            <img class="img-responsive" src="img/function_3_5_d.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div id="footer" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/group-20.png" style="margin-bottom:10px; margin-top:10px; margin-left:17px;" />
+            </div>
+            <div class="col-sm-6" id="sns" style="position:initial; text-align:right; margin-top:0; padding:10px;">
+                <a href="https://www.facebook.com/dealfireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 54.png" /></a>
+                <a href="https://www.instagram.com/deal_fireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/a.png" /></a>
+                <a href="https://blog.naver.com/fireseed77" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 53.png" /></a>
+            </div>
+        </div>
+        <p>서울특별시 서초구 강남대로 311 드림플러스</p>
+        <p style="color:white;">주식회사 파이어씨드 | 사업자등록번호 468-87-00736</p>
+        <p>대표 이문영</p>
+
+    </div>
+        
+    
+</body>
+</html>

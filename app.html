@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>기본 서비스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/fabicon.png" />
+    <!--Bootstrap CSS-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--폰트 CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container button {
+            background-color: white;
+            border: 1px solid #000000;
+            font-size: 14px;
+            font-weight: 900;
+            margin-bottom: 5px;
+            width: 100px;
+            height: 39px;
+        }
+
+        .panel-heading {
+            background-color: #373c42;
+            color: white;
+            font-size: 14px;
+        }
+
+        #footer {
+            margin: 0 auto !important;
+            width: 100% !important;
+            position: absolute;
+            background-color: #373c42;
+            color: white;
+            font-size: 12px;
+        }
+      
+
+        #footer p {
+            margin-left: 19px;
+            text-align: left;
+        }
+
+        #sns i {
+           text-align:right;
+            padding:10px;
+        }
+
+        button:hover, button.hover {
+            background-color: black;
+            color: white;
+        }
+        #content{
+            letter-spacing:-1px;
+        }
+        .panel-heading a{
+            text-decoration:none;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        
+        <!-- Brand/logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/deal_logo.png" alt="logo">
+            </a>
+        </div>
+ 
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!-- Links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="nav-link" href="app.html" style="color:white;">기본서비스</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="pay_m.html">결제관리</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="account.html">정산 및 프로모션</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="faq1.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="padding-bottom:100px; min-height:100%; position:relative;">
+        <div class="container" style=" text-align:center;">
+            <img src="img/logo.png" />
+            <h1>앱 설치</h1>
+        </div>
+        
+        <div class="container" style="margin-bottom:10px; text-align:center;">
+            <button type="button" onclick="location.href='app.html'" class="hover">앱 설치</button>
+            <button type="button" onclick="location.href='signup.html'">회원가입</button>
+            <button type="button" onclick="location.href='function_m.html'">주요기능</button>
+            <button type="button" onclick="location.href='function_v.html'">부가기능</button>
+            <button type="button" onclick="location.href='info.html'">정보관리</button>
+            <button type="button" onclick="location.href='app.html'">기타</button>
+        </div>
+
+        <div id="content" class="container" style="height:100%;">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-decoration:none;">안드로이드 사용자</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>구글 플레이스토어, 갤럭시 앱스에서 '딜앱' 검색</p>
+                            <img class="img-responsive" src="img/app_1_1_a.png" />
+                            <img class="img-responsive" src="img/app_1_1_b.png" />
+                            <button type="button" onclick="location.href='https://play.google.com/store/apps/details?id=com.loolu.loolu_dev'">
+                            <i class="fab fa-google"></i>다운로드</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">iOS 사용자</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>앱스토어에서 '딜앱' 검색</p>
+                            <img class="img-responsive" src="img/app_1_2_a.png" />
+                            <button type="button" onclick="location.href='https://itunes.apple.com/us/app/%EB%94%9C-deal-%EA%B7%B9%EB%94%9C/id1211088640?l=ko&ls=1&mt=8'">
+                                <i class="fab fa-apple"></i>앱스토어</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+    </div>
+    <div id="footer" class="container-fluid">
+        
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/group-20.png" style="margin-bottom:10px; margin-top:10px; margin-left:17px;" />
+                </div>
+                <div class="col-sm-6" id="sns" style="position:initial; text-align:right; margin-top:0; padding:10px;">
+                    <a href="https://www.facebook.com/dealfireseed/"  style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 54.png" /></a>
+                    <a href="https://www.instagram.com/deal_fireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/a.png" /></a>
+                    <a href="https://blog.naver.com/fireseed77" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 53.png"/></a>
+                </div>
+            </div>
+            <p>서울특별시 서초구 강남대로 311 드림플러스</p>
+            <p style="color:white;">주식회사 파이어씨드 | 사업자등록번호 468-87-00736</p>
+            <p>대표 이문영</p>
+        
+    </div>
+        
+    
+</body>
+</html>

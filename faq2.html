@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/fabicon.png" />
+    <!--Bootstrap CSS-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--폰트 CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        a{
+            text-decoration:none;
+        }
+
+        .container button {
+            background-color: white;
+            border: 1px solid #000000;
+            font-size: 14px;
+            font-weight: 900;
+            margin-bottom: 5px;
+           width:150px;
+            height: 39px;
+        }
+
+        .panel-heading {
+            background-color: #373c42;
+            color: white;
+            font-size: 14px;
+        }
+
+        #footer {
+            margin: 0 auto !important;
+            width: 100% !important;
+            position: absolute;
+            background-color: #373c42;
+            color: white;
+            font-size: 12px;
+        }
+
+
+            #footer p {
+                margin-left: 19px;
+                text-align: left;
+            }
+
+        #sns i {
+            text-align: right;
+            padding: 10px;
+        }
+        button:hover, button.hover{
+            background-color:black;
+            color:white;
+        }
+        table{
+            font-size:12px;
+        }
+        #content {
+            letter-spacing: -1px;
+        }
+
+        .panel-heading a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        
+        <!-- Brand/logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/deal_logo.png" alt="logo">
+            </a>
+        </div>
+ 
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!-- Links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="nav-link" href="app.html">기본서비스</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="pay_m.html">결제관리</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="account.html">정산 및 프로모션</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="faq1.html" style="color:white;">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="padding-bottom:100px; min-height:100%; position:relative;">
+        <div class="container" style=" text-align:center;">
+            <img src="img/logo.png" />
+            <h1>FAQ</h1>
+        </div>
+        
+        <div class="container" style="margin-bottom:10px; text-align:center;">
+            <button type="button" onclick="location.href='faq1.html'">기본서비스</button>
+            <button type="button" onclick="location.href='faq2.html'" class="hover">결제관리</button>
+            <button type="button" onclick="location.href='faq3.html'">정산 및 프로모션</button>
+        </div>
+
+        <div id="content" class="container" style="height:100%;">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">배송거래인데 바로결제로 거래했어요.  </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                배송결제로 거래를 진행해주셔야 원활하고 안전한 거래를 하실 수 있습니다. 거래방식 선택 오류로 인한 거래이상 발생에 대해 딜앱 측에서 책임을 지지 않습니다.
+                            </p>
+                            <p>- 판매자 : 해당결제 건 취소 후 배송결제로 거래를 재진행해주셔야 합니다.</p>
+                            <p>
+                                - 판매자 : 해당결제 건 취소 후 배송결제로 거래를 재진행해주셔야 합니다.
+                                - 구매자 : 판매자분께 결제취소를 요청해주셔야 합니다. 또한 결제링크 접속 시 결제금액에 배송비 금액이 표기되어 있는지, 결제자정보 항목에 주소 및 전화번호 입력란이 뜨는지 필히 확인해주셔야 합니다. 
+                            </p>
+                            <img class="img-responsive" src="img/faq2_1.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">송장번호는 어떻게 등록/확인하나요? </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>- 판매자 : 앱 실행 후 [내역] >  해당결제내역에 들어가시어, [송장번호 입력] 버튼을 클릭하시면 송장번호를 등록(+수정)하실 수 있습니다.</p>
+                            <p>- 구매자 : 판매자가 송장번호를 등록하면 결제영수증 상단에 송장번호가 표기됩니다. 결제영수증 보관을 깜빡하셨다면, 판매자분께 요청하셔서 영수증을 재발송 받으실 수 있습니다. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">판매자가 등록한 송장번호가 배송추적이 안돼요.  </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>해외 → 국내발 배송 건(장기배송)이거나, 연휴 및 배송량 폭주 등의 택배사 사정에 따라 일정기간 동안 확인이 어려우실 수 있습니다. </p>
+                            <p>다만 판매자측의 의도적인 허위송장번호 입력 등 사기로 이어질 수 있는 상황임을 감안하여, 결제대금 임시동결 후 판매자측에 확인하는 등 조취를 진행해드립니다.  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">방금 결제가 됐는데, 결제내역이 안 떠요.  </a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                통신상황(데이터, 와이파이 등)에 따라 신규결제 건 내역반영이 다소 느려질 수 있습니다. 결제내역이 안보이실 경우, 화면을 아래로 당겼다가 놓으시면 신규목록을 확인하실 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">1일 정산요청 건은 취소가 안되나요? </a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                1일 정산요청은 결제일 기준 1영업일 경과 후 바로 대금이 정산되므로, 결제취소가 불가능합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">구매자도 결제취소가 가능한가요? </a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                구매자분께서는 결제취소를 하실 수 없습니다. 딜앱 판매자분만 앱 내에서 결제취소를 요청하실 수 있습니다.
+                            </p>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">공공기관에서 들어온 주문도 딜앱으로 판매가 가능한가요? </a>
+                        </h4>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                가능합니다. 온라인 신용카드 매출전표 발행 요청하시는 경우, 딜앱 측에 요청주시면 발행해드립니다. 다만, 공급자가 가입하신 상점명이 아닌 주식회사 파이어씨드(딜앱 운영사) 이름으로 발행되니, 이점 관공서 혹은 공공기관 측에 사전에 안내해주시기 바랍니다.
+                            </p>              
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">결제 취소 시 취소 수수료가 있나요?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse8" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>취소 건에 대한 수수료는 없습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">알바 월급을 딜앱으로 결제해줘도 되나요?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse9" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                임금은 카드결제로 지급하실 수 없습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+        
+    </div>
+    <div id="footer" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/group-20.png" style="margin-bottom:10px; margin-top:10px; margin-left:17px;" />
+            </div>
+            <div class="col-sm-6" id="sns" style="position:initial; text-align:right; margin-top:0; padding:10px;">
+                <a href="https://www.facebook.com/dealfireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 54.png" /></a>
+                <a href="https://www.instagram.com/deal_fireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/a.png" /></a>
+                <a href="https://blog.naver.com/fireseed77" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 53.png" /></a>
+            </div>
+        </div>
+        <p>서울특별시 서초구 강남대로 311 드림플러스</p>
+        <p style="color:white;">주식회사 파이어씨드 | 사업자등록번호 468-87-00736</p>
+        <p>대표 이문영</p>
+
+    </div>
+        
+    
+</body>
+</html>

@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>정산 및 프로모션</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/fabicon.png" />
+    <!--Bootstrap CSS-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--폰트 CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        a{
+            text-decoration:none;
+        }
+
+        .container button {
+            background-color: white;
+            border: 1px solid #000000;
+            font-size: 14px;
+            font-weight: 900;
+            margin-bottom: 5px;
+           width:100px;
+            height: 39px;
+        }
+
+        .panel-heading {
+            background-color: #373c42;
+            color: white;
+            font-size: 14px;
+        }
+
+        #footer {
+            margin: 0 auto !important;
+            width: 100% !important;
+            position: absolute;
+            background-color: #373c42;
+            color: white;
+            font-size: 12px;
+        }
+
+
+            #footer p {
+                margin-left: 19px;
+                text-align: left;
+            }
+
+        #sns i {
+            text-align: right;
+            padding: 10px;
+        }
+        button:hover, button.hover{
+            background-color:black;
+            color:white;
+        }
+        table{
+            font-size:12px;
+        }
+        #content {
+            letter-spacing: -1px;
+        }
+
+        .panel-heading a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        
+        <!-- Brand/logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/deal_logo.png" alt="logo">
+            </a>
+        </div>
+ 
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!-- Links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="nav-link" href="app.html">기본서비스</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="pay_m.html">결제관리</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="account.html" style="color:white;">정산 및 프로모션</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="faq1.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="padding-bottom:100px; min-height:100%; position:relative;">
+        <div class="container" style=" text-align:center;">
+            <img src="img/logo.png" />
+            <h1>프로모션</h1>
+        </div>
+        
+        <div class="container" style="margin-bottom:10px; text-align:center;">
+            <button type="button" onclick="location.href='account.html'">정산관리</button>
+            <button type="button" onclick="location.href='promo.html'" class="hover">프로모션</button>
+        </div>
+
+        <div id="content" class="container" style="height:100%;">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">수수료 2.5% 딜멤버십</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img class="img-responsive" src="img/promo_2_a.png" />
+                            <button type="button" onclick="location.href='https://goo.gl/forms/RTkHHz2vGWnwzJ6s2'">가입신청</button>
+                            <p>■ 딜멤버쉽 - 프리미엄 </p>
+                            <p>-기본수수료 업계최저 2.5%로 12개월 이용</p>
+                            <p>-일일한도 최대 1천만원으로 연간 5회 무료증액 가능 (만1개월 내 1회 사용가능)</p>
+                            <p style="color:red;">→ 일일한도증액권 구매비용 대비 연간최소 11만원 절약!</p>
+                            <p>-연간한도 최대 7천만원까지 증액 가능</p>
+                            <p>-월 내역 등 거래리포트 무료제공</p>
+                            <p>■ 딜멤버쉽 - 골드 </p>
+                            <p>-기본수수료 업계최저 2.5%로 12개월 이용</p>
+                            <p>-일일한도 최대 1천만원으로 연간 10회 무료증액 가능 (만1개월 내 1회 사용가능) </p>
+                            <p style="color:red;"> → 일일한도증액권 구매비용 대비 연간최소 33만원 절약! </p>
+                            <p>-연간한도 최대 1억원까지 증액 가능</p>
+                            <p>-월 내역 등 거래리포트 무료제공</p>
+                            <p style="color:red;">*동일 사업장으로 가입한 계정의 전체적용은 불가합니다. (개별 가입 필요)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">일일한도증액권</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img class="img-responsive" src="img/promo_2_b.png" />
+                            <button type="button" onclick="location.href='https://goo.gl/forms/sDjPINPEjjnJCYKn1'">일일한도</button>
+                            <h4>■ 일일한도 증액권 </h4>
+                            <p>-(추천)딜멤버쉽 일일한도 무료증액횟수 소진 시/ 만1일간 한도증액 사용 희망 시</p>
+                            <p>-기본수수료 업계최저 2.5%로 만1일 이용</p>
+                            <p>-일일한도 최대 1천만원으로 이용</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+        </div>
+        
+    </div>
+    <div id="footer" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/group-20.png" style="margin-bottom:10px; margin-top:10px; margin-left:17px;" />
+            </div>
+            <div class="col-sm-6" id="sns" style="position:initial; text-align:right; margin-top:0; padding:10px;">
+                <a href="https://www.facebook.com/dealfireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 54.png" /></a>
+                <a href="https://www.instagram.com/deal_fireseed/" style="color:white; margin-right:15px;" target="_blank"><img src="img/a.png" /></a>
+                <a href="https://blog.naver.com/fireseed77" style="color:white; margin-right:15px;" target="_blank"><img src="img/Fill 53.png" /></a>
+            </div>
+        </div>
+        <p>서울특별시 서초구 강남대로 311 드림플러스</p>
+        <p style="color:white;">주식회사 파이어씨드 | 사업자등록번호 468-87-00736</p>
+        <p>대표 이문영</p>
+
+    </div>
+        
+    
+</body>
+</html>
